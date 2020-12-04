@@ -14,7 +14,7 @@ class BackupController extends Controller
      */
     public function index()
     {
-        return view('admin.mange.backup');
+        return view('admin.administrative.backup');
     }
 
     /**

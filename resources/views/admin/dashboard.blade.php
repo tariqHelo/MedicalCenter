@@ -38,6 +38,7 @@ License: You must have a valid license purchased only from themeforest(the above
 <link href="assets/metroinc/admin/layout/css/layout-rtl.css" rel="stylesheet" type="text/css"/>
 <link id="style_color" href="assets/metroinc/admin/layout/css/themes/darkblue-rtl.css" rel="stylesheet" type="text/css"/>
 <link href="assets/metroinc/admin/layout/css/custom-rtl.css" rel="stylesheet" type="text/css"/>
+@yield("css")
 <!-- END THEME STYLES -->
 <link rel="shortcut icon" href="favicon.ico"/>
 </head>
@@ -896,6 +897,10 @@ Demo.init(); // init demo features
 });
 </script>
 <!-- END PAGE LEVEL SCRIPTS -->
+<!-- BEGIN PAGE LEVEL STYLES -->
+@yield("js")
+
+<!-- END PAGE LEVEL STYLES -->
 </body>
 <!-- END BODY -->
 </html>

@@ -14,7 +14,7 @@ class SettingController extends Controller
      */
     public function index()
     {
-       return view('admin.mange.settingemail');
+       return view('admin.administrative.settingemail');
     }
 
 }

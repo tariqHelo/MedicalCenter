@@ -14,7 +14,7 @@ class AddServiceController extends Controller
      */
     public function index()
     {
-        return view('admin.mange.addservice');
+        return view('admin.administrative.addservice');
 
     }
 

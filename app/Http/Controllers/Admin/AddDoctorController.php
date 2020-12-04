@@ -14,7 +14,7 @@ class AddDoctorController extends Controller
      */
     public function index()
     {
-        return view('admin.mange.addDoctor');
+        return view('admin.administrative.addDoctor');
 
     }
 

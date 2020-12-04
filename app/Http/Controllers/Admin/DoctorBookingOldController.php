@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class CurrncyController extends Controller
+class DoctorBookingOldController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,8 @@ class CurrncyController extends Controller
      */
     public function index()
     {
-        return view('admin.administrative.currncy');
+    return view('admin.patients.doctorbookingold');
+    
     }
 
     /**

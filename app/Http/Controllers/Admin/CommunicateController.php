@@ -14,7 +14,7 @@ class CommunicateController extends Controller
      */
     public function index()
     {
-        return view('admin.mange.communicate');
+        return view('admin.administrative.communicate');
 
     }
 

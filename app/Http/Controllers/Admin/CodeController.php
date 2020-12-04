@@ -14,7 +14,7 @@ class CodeController extends Controller
      */
     public function index()
     {
-        return view('admin.mange.code');
+        return view('admin.administrative.code');
 
     }
 

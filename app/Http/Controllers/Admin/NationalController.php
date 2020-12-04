@@ -14,7 +14,7 @@ class NationalController extends Controller
      */
     public function index()
     {
-        return view('admin.mange.national');
+        return view('admin.administrative.national');
     }
 
     /**

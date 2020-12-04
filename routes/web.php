@@ -13,11 +13,19 @@ use App\Http\Controllers\Admin\EndVisitController;
 use App\Http\Controllers\Admin\NationalController;
 use App\Http\Controllers\Admin\AddClinicController;
 use App\Http\Controllers\Admin\AddDoctorController;
+use App\Http\Controllers\Admin\AddPatientController;
 use App\Http\Controllers\Admin\AddServiceController;
 use App\Http\Controllers\Admin\DictionaryController;
 use App\Http\Controllers\Admin\CommunicateController;
 use App\Http\Controllers\Admin\DataGeneralController;
+use App\Http\Controllers\Admin\ShiftReportController;
 use App\Http\Controllers\Admin\VaccinationsControler;
+use App\Http\Controllers\Admin\RedisClosureController;
+use App\Http\Controllers\Admin\changeBookTimeController;
+use App\Http\Controllers\Admin\PatientArchiveController;
+use App\Http\Controllers\Admin\DoctorBookingOldController;
+use App\Http\Controllers\Admin\InvoicePackPrintController;
+use App\Http\Controllers\Admin\DoctorRadiologyBookingController;
 
 /*
 |--------------------------------------------------------------------------
@@ -34,27 +42,13 @@ Route::get('/', function () {
     return view('admin.dashboard');
 });
 
-Route::resource('national', NationalController::class)->only([
-    'index','create', 'store', 'update', 'destroy'
-]);
-Route::resource('visitor', VisitorController::class)->only([
-    'index', 'show','create', 'store', 'update', 'destroy'
-]);
-Route::resource('endvisit', EndVisitController::class)->only([
-    'index', 'show','create', 'store', 'update', 'destroy'
-]);
-Route::resource('report', ReportController::class)->only([
-    'index', 'show','create', 'store', 'update', 'destroy'
-]);
-
 Route::resources([
-    // 'national', NationalController::class,
-    // 'visitor', VisitorController::class,
-    // 'endvisit', EndVisitController::class,
-    // 'report', ReportController::class,
-
-
-
+    ///Administrative
+    'national'  => NationalController::class,
+    'visitor'   => VisitorController::class,
+    'endvisit'  => EndVisitController::class,
+    'report'    => ReportController::class,
+     //////
     'email'       => SettingController::class,
     'options'     => OptionsController::class,
     'vaccinations'=> VaccinationsControler::class,
@@ -68,8 +62,24 @@ Route::resources([
     'addclinic'  => AddClinicController::class,
     'addDoctor'  => AddDoctorController::class,   
     ////
-    'data'       => DataGeneralController::class,    
- 
+    'data'       => DataGeneralController::class,   
+
+    //////patients
+    'shiftreport'         => ShiftReportController::class,   
+    'doctorbooking'       => DoctorBookingOldController::class,   
+    'redisclosure'        => RedisClosureController::class,   
+    'changebook'          => changeBookTimeController::class,   
+    'anlysisdoctor'       => DoctorBookingOldController::class,   
+    'radiologybooking'    => DoctorRadiologyBookingController::class,  
+    'patientsattachments' => PatientArchiveController::class,   
+    'invoicePackprint'    => InvoicePackPrintController::class,   
+    'PatientArchive'      => PatientArchiveController::class,
+
+     /////
+    'AddPatient'      => AddPatientController::class,
+
+
+
 ]);
 
 

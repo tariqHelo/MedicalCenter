@@ -14,7 +14,7 @@ class ReportController extends Controller
      */
     public function index()
     {
-        return view('admin.mange.report');
+        return view('admin.administrative.report');
 
     }
 

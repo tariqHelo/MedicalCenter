@@ -14,7 +14,7 @@ class VisitorController extends Controller
      */
     public function index()
     {
-        return view('admin.mange.visitor');
+        return view('admin.administrative.visitor');
     }
 
     /**

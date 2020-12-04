@@ -43,6 +43,33 @@ class LinksSeeder extends Seeder
 
 
 
+      
+        //Pationts        
+        $link = Linke::create(['title'=>'المرضي','icon'=>'icon-list','route'=>'#']);
+        Linke::create(['title'=>'إقفال اليومية','icon'=>'icon-list','route'=>'shiftreport.index','parent_id'=>$link->id]);
+        Linke::create(['title'=>'قائمة حجز الإطباء','icon'=>'icon-plus','route'=>'doctorbooking.index','parent_id'=>$link->id]);
+        Linke::create(['title'=>'إعاد الكشف','icon'=>'icon-list','route'=>'redisclosure.index','parent_id'=>$link->id]);
+        Linke::create(['title'=>'تغير موعد الحجز','icon'=>'icon-plus','route'=>'changebook.index','parent_id'=>$link->id]);
+        Linke::create(['title'=>'قائمة حجوزات التحاليل','icon'=>'icon-list','route'=>'anlysisdoctor.index','parent_id'=>$link->id]);
+        Linke::create(['title'=>'قائمة حجوزات الإشعة','icon'=>'icon-plus','route'=>'radiologybooking.index','parent_id'=>$link->id]);
+        Linke::create(['title'=>'مرفقات مريض','icon'=>'icon-list','route'=>'patientsattachments.index','parent_id'=>$link->id]);
+        Linke::create(['title'=>'طباعة فاتورة مجمعة','icon'=>'icon-plus','route'=>'invoicePackprint.index','parent_id'=>$link->id]);
+        Linke::create(['title'=>'إرسال المريض','icon'=>'icon-list','route'=>'PatientArchive.index','parent_id'=>$link->id]);
+        Linke::create(['title'=>'قائمة حجز الإطباء','icon'=>'icon-plus','route'=>'national.create','parent_id'=>$link->id]);
+        $adds = Linke::create(['title'=>'الإستقبال','icon'=>'fa fa-list','route'=>'national.index','parent_id'=>$link->id]);
+        Linke::create(['title'=>'إضافة مريض جديد ','icon'=>'icon-list','route'=>'AddPatient.index','parent_id'=>$adds->id]);
+        Linke::create(['title'=>' فاتورة','icon'=>'icon-plus','route'=>'national.index','parent_id'=>$adds->id]);
+        Linke::create(['title'=>' بحث مريض','icon'=>'fa fa-list','route'=>'national.index','parent_id'=>$adds->id]);
+        Linke::create(['title'=>'حساب  مريض ','icon'=>'icon-list','route'=>'national.index','parent_id'=>$link->id]);
+        Linke::create(['title'=>' حجز لمريض جديد ','icon'=>'icon-list','route'=>'national.index','parent_id'=>$adds->id]);
+        Linke::create(['title'=>' حجز موعد','icon'=>'icon-plus','route'=>'national.index','parent_id'=>$adds->id]);
+     
+        Linke::create(['title'=>'إقفال الموظفين ','icon'=>'icon-list','route'=>'national.index','parent_id'=>$link->id]);
+        Linke::create(['title'=>' طباعة الكرت','icon'=>'icon-list','route'=>'national.index','parent_id'=>$link->id]);
+        Linke::create(['title'=>' حجوزات الاونلاين','icon'=>'icon-plus','route'=>'national.create','parent_id'=>$link->id]);
+        Linke::create(['title'=>' العملاء المحتملين','icon'=>'icon-list','route'=>'national.index','parent_id'=>$link->id]);
+
+
      ///employees
      $link = Linke::create(['title'=>'شئون الموظفين   ','icon'=>'fa fa-cog','route'=>'#']);
      Linke::create(['title'=>'لوائح المخالفات ','icon'=>'icon-list','route'=>'national.index','parent_id'=>$link->id]);
@@ -78,12 +105,7 @@ class LinksSeeder extends Seeder
     //  Linke::create(['title'=>'شرائح ضريبة الدخل ','icon'=>'icon-list','route'=>'bookings.index','parent_id'=>$link->id]);
     
 
-       
-        // //Pationts        
-        // $link = Linke::create(['title'=>'المرضي','icon'=>'icon-list','route'=>'#']);
-        // Linke::create(['title'=>'إقفال اليومية','icon'=>'icon-list','route'=>'rooms.index','parent_id'=>$link->id]);
-        // Linke::create(['title'=>'Create New Room','icon'=>'icon-plus','route'=>'rooms.create','parent_id'=>$link->id]);
-       
+     
         // //Campanys        
         // $link = Linke::create(['title'=>'الشركات','icon'=>'fa fa-calendar','route'=>'#']);
         // Linke::create(['title'=>'Manage Offers','icon'=>'icon-list','route'=>'offers.index','parent_id'=>$link->id]);

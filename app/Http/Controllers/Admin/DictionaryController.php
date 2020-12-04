@@ -14,7 +14,7 @@ class DictionaryController extends Controller
      */
     public function index()
     {
-        return view('admin.mange.dictionary');
+        return view('admin.administrative.dictionary');
 
     }
 

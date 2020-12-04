@@ -14,7 +14,7 @@ class AddClinicController extends Controller
      */
     public function index()
     {
-       return view('admin.mange.addclinic');
+       return view('admin.administrative.addclinic');
     }
 
     /**

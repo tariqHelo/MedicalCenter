@@ -14,7 +14,7 @@ class VaccinationsControler extends Controller
      */
     public function index()
     {
-        return view('admin.mange.Vaccinations');
+        return view('admin.administrative.Vaccinations');
     }
 
     /**

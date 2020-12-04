@@ -14,7 +14,7 @@ class EndVisitController extends Controller
      */
     public function index()
     {
-        return view('admin.mange.endvisit');
+        return view('admin.administrative.endvisit');
 
     }
 

@@ -14,7 +14,7 @@ class DataGeneralController extends Controller
      */
     public function index()
     {
-        return view('admin.mange.general');
+        return view('admin.administrative.general');
     }
 
     /**
